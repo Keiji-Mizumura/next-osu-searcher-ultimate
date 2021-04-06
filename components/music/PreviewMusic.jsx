@@ -1,7 +1,9 @@
 import ReactAudioPlayer from 'react-audio-player'
 
 const styles = {
-    width: '100%'
+    width: '100%',
+    backgroundColor: '#46393f',
+    borderRadius: "10px"
 }
 
 const PreviewMusic = (props) => {

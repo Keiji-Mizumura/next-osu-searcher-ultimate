@@ -8,18 +8,28 @@
   --osu-kinda-dark: rgb(70, 57, 63);
   --osu-light-text: rgb(163,143,152);
   --osu-highlight-text: rgb(238, 157, 29);
+
+  --score-dark: rgb(23,26,28);
+  --score-inner-dark: rgb(34,40,42);
+  --score-light: rgb(46,53,56);
+  --score-text-light: rgb(136,151,163);
+
+  --score-highlight-green: rgb(169,242,99);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
   margin: 0;
   background-color: rgba(28,23,25, 1);
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

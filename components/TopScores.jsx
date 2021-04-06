@@ -65,6 +65,13 @@ const TopScores = ({playerID, mode}) => {
                         beatmapId={item.beatmap_id}
                         pp={Math.round(item.pp)}
                         mods={item.enabled_mods}
+                        score={item.score}
+                        maxcombo={item.maxcombo}
+                        count50={item['count50']}
+                        count100={item['count100']}
+                        count300={item['count300']}
+                        countmiss={item.countmiss}
+                        perfect={item.perfect}
                     />
                 )}
             </Container>

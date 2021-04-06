@@ -24,6 +24,8 @@ const Home = () => {
           <p>Contribute by going to <a href="https://github.com/Keiji-Mizumura/next-osu-searcher-ultimate">Github</a> or by sending me HTML and CSS files :D</p>
           <p>I used <a href="https://reactjs.org/">REACT</a> and <a href="https://nextjs.org/">Next.js</a> for this project.</p>
           <p>Just learn the basics of react and you are good to help :D</p>
+          <br/>
+          <p>BTW. This page is still not responsive. Planning to implement that soon</p>
           <br/><br/><br/><br/><br/>
           <Link href={'/player'}>
           <a>
