@@ -3,3 +3,11 @@
     margin: 0 auto;
     padding: 0 50px;
 }
+
+/* Container Responsive code */
+
+@media (max-width: 1000px){
+    .container{
+        width: 100%;
+    }
+}
