@@ -10,7 +10,7 @@ const SearchHeader = (props) => {
                 <Link href={'/'}>
                     <img src="https://osu.ppy.sh/assets/images/osu-logo-white.59d385da.svg" alt="logo" />
                 </Link>
-                <input type="text" placeholder="Search Player" onChange={props.onChange} value={props.value}/>
+                <input type="text" placeholder="Search Player" onChange={props.onChange} value={props.value} autoFocus/>
             </Container>
         </div>
     )

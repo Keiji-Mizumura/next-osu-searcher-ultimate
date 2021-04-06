@@ -13,6 +13,7 @@ const SearchPlayerPage = () => {
     return (
         <>
             <SearchHeader onChange={handleChange}/>
+            {/* ADD SOMETHING BELOW */}
         </>
     )
 
