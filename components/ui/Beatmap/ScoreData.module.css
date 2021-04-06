@@ -1,0 +1,73 @@
+/* Player results */
+
+.player_results{
+    font-family: 'Open-sans';
+    background-color: var(--score-inner-dark);
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+}
+
+.player_results > div{
+    padding: 10px;
+    background-color: var(--score-light);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 5px 20px 0 rgba(0,0,0,0.4);
+}
+
+.thumbnail{
+    height: 100px;
+    width: 100px;
+    background-color: #ff66ab;
+}
+
+.player_results > div > div{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+.top_results{
+    display: flex;
+}
+
+.top_results > div{
+    padding: 10px;
+}
+
+.top_results h2{
+    color: var(--score-text-light);
+    border-bottom: 1px solid var(--score-text-light);
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.top_results h1{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.bottom_results > div{
+    display: inline-block;
+    padding: 10px;
+}
+
+.bottom_results h2{
+    color: var(--score-text-light);
+    border-bottom: 1px solid var(--score-text-light);
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.bottom_results h1{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.green{
+    color: var(--score-highlight-green);
+}

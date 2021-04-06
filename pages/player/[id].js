@@ -1,5 +1,5 @@
-import SearchResults from '../../components/SearchResults'
-import SearchHeader from '../../components/layout/SearchHeader'
+import SearchResults from '../../components/layout/Search/SearchResults'
+import SearchHeader from '../../components/layout/Search/SearchHeader'
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'

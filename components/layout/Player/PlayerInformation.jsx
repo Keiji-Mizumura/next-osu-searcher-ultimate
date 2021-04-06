@@ -1,10 +1,13 @@
-import { numberWithCommas, roundTwoDecimals } from '../../modules/Math'
-import getCountryName from '../../modules/Country'
-import Avatar from '../ui/Avatar'
-import Container from '../ui/Container'
+import { numberWithCommas, roundTwoDecimals } from '../../../modules/Math'
+import getCountryName from '../../../modules/Country'
+import Avatar from '../../ui/Images/Avatar'
+import Container from '../../ui/Containers/Container'
+import TopScores from './TopScores'
+
 import classes from './PlayerInformation.module.css'
+
 import { Fragment } from 'react'
-import TopScores from '../TopScores'
+
 
 const PlayerInformation = ({playerID, playerName, country, rankedScore, accuracy, playCount, totalScore, totalHits, mode}) => {
     return(

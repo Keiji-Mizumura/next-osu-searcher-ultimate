@@ -3,7 +3,7 @@ import { Fragment} from 'react'
 import Link from 'next/link'
 
 import Head from 'next/head'
-import Container from '../components/ui/Container'
+import Container from '../components/ui/Containers/Container'
 
 const Home = () => {
   

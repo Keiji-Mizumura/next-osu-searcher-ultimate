@@ -1,4 +1,4 @@
-import SearchHeader from '../../components/layout/SearchHeader'
+import SearchHeader from '../../components/layout/Search/SearchHeader'
 
 import { useRouter } from 'next/router'
 

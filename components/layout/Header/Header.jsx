@@ -1,4 +1,4 @@
-import Container from '../ui/Container'
+import Container from '../../ui/Containers/Container'
 import classes from './Header.module.css'
 
 const Header = (props) => {

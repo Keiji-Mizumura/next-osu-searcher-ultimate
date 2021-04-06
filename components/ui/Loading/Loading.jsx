@@ -1,4 +1,4 @@
-import Container from "./Container"
+import Container from "../Containers/Container"
 import classes from './Loading.module.css'
 
 const Loading = (props) => {

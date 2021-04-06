@@ -1,4 +1,4 @@
-import Container from '../ui/Container'
+import Container from '../../ui/Containers/Container'
 import classes from './SearchHeader.module.css'
 
 import Link from 'next/link'

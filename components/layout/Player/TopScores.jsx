@@ -1,7 +1,8 @@
-import Container from "./ui/Container"
+import Container from "../../ui/Containers/Container"
 
 import classes from './TopScores.module.css'
-import Beatmap from "./ui/Beatmap"
+
+import Beatmap from "../../ui/Beatmap/Beatmap"
 
 import { useState, useEffect } from 'react'
 

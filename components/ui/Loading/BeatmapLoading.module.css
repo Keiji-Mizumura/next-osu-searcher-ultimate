@@ -1,0 +1,62 @@
+/* Loading */
+
+.beatmap{
+    margin: auto;
+    padding: 10px;
+    background-color: #46393f;
+    margin: 2px 0px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.leftLoad{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.iconLoad{
+    background-color: var(--osu-dark);
+    height: 25px;
+    width: 50px;
+    border-radius: 10px;
+    animation-name: loading;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+.texts{
+    margin-left: 5px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texts > div{
+    height: 10px;
+    width: 200px;
+    background-color: var(--osu-dark);
+    animation-name: loading;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+.texts > div:nth-child(2){
+    height: 7px;
+}
+
+@keyframes loading{
+    0%{
+        background-color: var(--osu-dark);
+    }
+    50%{
+        background-color: var(--osu-kinda-dark);
+    }
+    100%{
+        background-color: var(--osu-dark);
+    }
+}

@@ -1,8 +1,8 @@
-import Header from './layout/Header'
-import PlayerInformation from './layout/PlayerInformation'
+import Header from '../Header/Header'
+import PlayerInformation from '../Player/PlayerInformation'
 
 import { useEffect, useState } from 'react'
-import Loading from './ui/Loading'
+import Loading from '../../ui/Loading/Loading'
 
 const SearchResults = (props) => {
 
