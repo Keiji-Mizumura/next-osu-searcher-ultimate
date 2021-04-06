@@ -1,0 +1,46 @@
+.content > div{
+    margin-top: 10px;
+    background-color: var(--osu-not-so-light);
+}
+
+.header{
+    padding: 10px 0;
+}
+
+.header h2{
+    color: #fff;
+    display: inline;
+    font-size: 1.2em;
+    border-bottom: 2px solid var(--osu-pink);
+}
+
+.performance{
+    margin-top: 20px;
+}
+
+.performance h2{
+    color: #fff;
+    font-size: 1em;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.pink{
+    height: .5em;
+    width: 3px;
+    display: inline-block;
+    background-color: var(--osu-pinkest);
+    border-radius: 3px;
+    position: absolute;
+    left: -10px;
+    top: .4em;
+}
+
+.amount{
+    display: inline-block;
+    background-color: var(--osu-darker-than-darkest);
+    color: var(--osu-light-text);
+    border-radius: 10px;
+    padding: 3px 6px;
+    font-size: .6em;
+}

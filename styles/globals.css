@@ -1,16 +1,30 @@
-html,
-body {
-  padding: 0;
+:root{
+  --osu-pinkest: rgb(210, 102, 171);
+  --osu-pink: rgb(172, 57, 109);
+  --osu-darkest: rgb(46, 31, 37);
+  --osu-darker-than-darkest: rgb(28,23,25);
+  --osu-dark: rgb(61, 41, 50);
+  --osu-not-so-light: rgb(42,34,38);
+  --osu-kinda-dark: rgb(70, 57, 63);
+  --osu-light-text: rgb(163,143,152);
+  --osu-highlight-text: rgb(238, 157, 29);
+}
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgba(28,23,25, 1);
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }

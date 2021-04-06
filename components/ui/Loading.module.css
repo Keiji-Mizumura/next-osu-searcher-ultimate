@@ -1,0 +1,134 @@
+.loading > div{
+    background-color: var(--osu-not-so-light);
+    display: flex;
+    justify-content: space-between;
+}
+
+.loading > div > div{
+    padding: 20px 0;
+}
+
+.personal{
+    display: flex;
+    gap: 15px;
+}
+
+.avatar{
+    height: 120px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: var(--osu-dark);
+    animation-name: loadMe;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+.names{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.names > div{
+    height: 15px;
+    width: 150px;
+    background-color: var(--osu-dark);
+    animation-name: loadMe;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+.names div:first-child{
+    height: 30px;
+}
+
+.stats{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.stats > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.stats > div > div{
+    height: 10px;
+    width: 150px;
+    background-color: var(--osu-dark);
+    animation-name: loadMe;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loadMe{
+    0%{
+        background-color: var(--osu-dark);
+    }
+    50%{
+        background-color: var(--osu-darkest);
+    }
+    100%{
+        background-color: var(--osu-dark);
+    }
+}
+
+/* OTHERS */
+
+.nothing > div{
+    background-color: var(--osu-dark);
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    margin-top: 65px;
+}
+
+.alert > div{
+    background-color: var(--osu-dark);
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    margin-top: 65px;
+}
+
+/* Dot animation */
+
+.dots{
+    display: inline-block;
+}
+
+.dots > div{
+    display: inline-block;;
+}
+
+.dots > div:nth-child(1){
+    animation-name: moveDots;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+}
+
+.dots > div:nth-child(2){
+    animation-name: moveDots;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;
+}
+
+.dots > div:nth-child(3){
+    animation-name: moveDots;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-delay: 2000ms;
+}
+
+@keyframes moveDots{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

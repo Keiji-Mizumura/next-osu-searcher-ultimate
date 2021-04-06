@@ -1,0 +1,49 @@
+.content > div{
+    background-color: var(--osu-not-so-light);
+    display: flex;
+    justify-content: space-between;
+}
+
+.content > div > div{
+    padding: 20px 0;
+}
+
+.personal{
+    display: flex;
+    gap: 15px;
+    color: #fff;
+}
+
+.personal_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.personal_info > div{
+    border-top: 2px solid var(--osu-pinkest);
+    text-align: right;
+    color: var(--osu-pinkest);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    align-items: center;
+}
+
+.personal_info > div > img{
+    height: 1.3em;
+}
+
+.stats{
+    color: #fff;
+    font-size: .9em;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.values{
+    text-align: right;
+}
+

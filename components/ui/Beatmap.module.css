@@ -1,0 +1,177 @@
+.beatmap{
+    margin: auto;
+    padding: 10px;
+    background-color: #46393f;
+    margin: 2px 0px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.beatmap .left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.beatmap .left .beatmap_title{
+    margin-left: 12px;
+}
+
+.beatmap-title .beatmap_name{
+    font-weight: 700;
+    font-size: .90em;
+}
+
+.beatmap_name:hover{
+    text-decoration: underline;
+}
+
+.beatmap-title .beatmap_artist{
+    font-size: .80em;
+}
+
+.beatmap_version{
+    color: #d3980a;
+    font-size: .75em;
+    font-weight: 700;
+}
+
+.beatmap .right{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.beatmap .right .pp{
+    font-weight: 700;
+    color: #ff66ab;
+}
+
+.beatmap .right .smol_pp{
+    color: #ff93c4;
+    font-size: .8em;
+}
+
+.mods{
+    padding: 0 20px;
+}
+
+/* Loading */
+
+.leftLoad{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.iconLoad{
+    background-color: var(--osu-dark);
+    height: 25px;
+    width: 50px;
+    border-radius: 10px;
+    animation-name: loading;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+.texts{
+    margin-left: 5px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texts > div{
+    height: 10px;
+    width: 200px;
+    background-color: var(--osu-dark);
+    animation-name: loading;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+}
+
+.texts > div:nth-child(2){
+    height: 7px;
+}
+
+@keyframes loading{
+    0%{
+        background-color: var(--osu-dark);
+    }
+    50%{
+        background-color: var(--osu-kinda-dark);
+    }
+    100%{
+        background-color: var(--osu-dark);
+    }
+}
+
+/* Hidden */
+
+.beatmap:hover{
+    background-color: var(--osu-dark);
+}
+
+.hidden{
+    padding: 10px;
+    overflow: hidden;
+    background-color: var(--osu-dark);
+    border-radius: 5px;
+}
+
+.hidden > a{
+    display: block;
+    position: relative;
+    width: 100%;
+    transition: 500ms;
+}
+
+.hidden > a > img{
+    width: 100%;
+    transition: 500ms;
+}
+
+.hidden > a:hover > img{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+
+/* .hidden > a > img:hover{
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+} */
+
+.buttonLink{
+    transition: 500ms;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--osu-dark);
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: 0;
+    color: #fff;
+}
+
+.music{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music > a{
+    color: var(--osu-pinkest)
+}
+
+.mods > p > span > img {
+    height: 30px;
+}
