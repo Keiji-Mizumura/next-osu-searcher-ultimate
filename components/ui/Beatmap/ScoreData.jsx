@@ -2,9 +2,11 @@ import classes from "./ScoreData.module.css";
 
 import { standard } from '../../../modules/Accuracy'
 import { numberWithCommas } from '../../../modules/Math'
+import BeatmapThumbnail from "../Images/BeatmapThumbnail";
 
 const ScoreData = (props) => {
   const {
+    beatmapset_id,
     score,
     countmiss,
     count50,
@@ -18,8 +20,9 @@ const ScoreData = (props) => {
   return (
     <div className={classes.player_results}>
       <div>
-        <div className={classes.thumbnail}></div>
-
+        <div className={classes.thumbnail}>
+          <BeatmapThumbnail beatmapset_id={beatmapset_id} />
+        </div>
         <div>
           <div className={classes.top_results}>
             <div>

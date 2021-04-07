@@ -4,6 +4,9 @@ import classes from './TopScores.module.css'
 
 import Beatmap from "../../ui/Beatmap/Beatmap"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+
 import { useState, useEffect } from 'react'
 
 const TopScores = ({playerID, mode}) => {
@@ -11,6 +14,8 @@ const TopScores = ({playerID, mode}) => {
     const [isLoaded, setIsLoaded] = useState(false)
     const [beatmaps, setBeatmaps] = useState([])
     const [isError, setIsError] = useState(null)
+
+    const [collapse, setCollapse] = useState(true)
 
     useEffect(() => {
         let mounted = true
@@ -34,6 +39,12 @@ const TopScores = ({playerID, mode}) => {
         }
 
     }, [playerID, mode])
+
+
+    const handleClick = () =>{
+        setCollapse(!collapse)
+    }
+
 
     if(isError){
         return (
@@ -59,22 +70,45 @@ const TopScores = ({playerID, mode}) => {
                     <h2><span className={classes.pink}></span>Best Performance <span className={classes.amount}>{beatmaps.length}</span></h2>
                 </div>
                 {/* ITERATE BEATMAPS BELOW */}
-                {beatmaps.map(item => 
-                    <Beatmap 
-                        key={item.beatmap_id}
-                        rank={item.rank}
-                        beatmapId={item.beatmap_id}
-                        pp={Math.round(item.pp)}
-                        mods={item.enabled_mods}
-                        score={item.score}
-                        maxcombo={item.maxcombo}
-                        count50={item['count50']}
-                        count100={item['count100']}
-                        count300={item['count300']}
-                        countmiss={item.countmiss}
-                        perfect={item.perfect}
-                    />
-                )}
+                <div className={classes.collapse}>
+                    {beatmaps.map( (item, index) =>
+                        index <= 5 ?
+                        <div>
+                            <Beatmap 
+                                key={item.beatmap_id}
+                                rank={item.rank}
+                                beatmapId={item.beatmap_id}
+                                pp={Math.round(item.pp)}
+                                mods={item.enabled_mods}
+                                score={item.score}
+                                maxcombo={item.maxcombo}
+                                count50={item['count50']}
+                                count100={item['count100']}
+                                count300={item['count300']}
+                                countmiss={item.countmiss}
+                                perfect={item.perfect}
+                            />
+                        </div>
+                        : 
+                        <div className={collapse && classes.hidden}>
+                            <Beatmap 
+                                key={item.beatmap_id}
+                                rank={item.rank}
+                                beatmapId={item.beatmap_id}
+                                pp={Math.round(item.pp)}
+                                mods={item.enabled_mods}
+                                score={item.score}
+                                maxcombo={item.maxcombo}
+                                count50={item['count50']}
+                                count100={item['count100']}
+                                count300={item['count300']}
+                                countmiss={item.countmiss}
+                                perfect={item.perfect}
+                            />
+                        </div>
+                    )} 
+                    <button className={classes.btn} onClick={handleClick}><FontAwesomeIcon icon={faChevronDown} />{collapse ? ' SHOW MORE ' : ' SHOW LESS '}<FontAwesomeIcon icon={faChevronDown} /></button>
+                </div>
             </Container>
         </div>
     )

@@ -51,6 +51,7 @@ const HiddenBeatmapContent = (props) => {
       </div>
 
       <ScoreData
+        beatmapset_id={beatmap.beatmapset_id}
         score={score}
         countmiss={countmiss}
         count50={count50}
