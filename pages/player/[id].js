@@ -25,6 +25,8 @@ const PlayerPage = () => {
         <>
             <Head>
                 <title>osu! Searcher Ultimate | {player}</title>
+                <link rel="icon" href="https://osu.ppy.sh/assets/images/osu-logo-white.59d385da.svg" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             {/* <img 
             style={{

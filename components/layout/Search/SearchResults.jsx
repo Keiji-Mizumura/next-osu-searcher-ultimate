@@ -84,6 +84,13 @@ const SearchResults = (props) => {
                 playCount={playerData.playcount}
                 totalScore={playerData.total_score}
                 totalHits={+playerData['count300'] + +playerData['count100'] + +playerData['count50']}
+                pp_raw={playerData.pp_raw}
+                count_rank_ss={playerData.count_rank_ss}
+                count_rank_ssh={playerData.count_rank_ssh}
+                count_rank_s={playerData.count_rank_s}
+                count_rank_sh={playerData.count_rank_sh}
+                count_rank_a={playerData.count_rank_a}
+                total_seconds_played={playerData.total_seconds_played}
             />
         </>
     )

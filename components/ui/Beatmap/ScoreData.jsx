@@ -73,7 +73,8 @@ const ScoreData = (props) => {
             </div>
             <div>
               <h2>TIME</h2>
-              <h1>14m</h1>
+              <h1>14m</h1> 
+              {/* STILL NEED TO GET TIME */}
             </div>
           </div>
         </div>

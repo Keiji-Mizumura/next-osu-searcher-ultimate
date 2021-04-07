@@ -59,4 +59,20 @@
     padding: 5px 20px;
     border-radius: 15px;
     cursor: pointer;
+    font-size: 1em;
+}
+
+.btn:hover{
+    background-color: var(--osu-dark);
+}
+
+.icon{
+    height: 10px;
+    margin: 0 10px;
+}
+
+.reversed_icon{
+    height: 10px;
+    margin: 0 10px;
+    transform: rotate(180deg);
 }

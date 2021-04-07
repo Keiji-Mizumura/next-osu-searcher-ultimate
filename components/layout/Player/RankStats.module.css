@@ -1,0 +1,60 @@
+
+
+.content > div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    background-color: var(--osu-not-so-light);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content > div > div{
+    width: 100%;
+}
+
+.stats{
+    display: flex;
+}
+
+.stats > div+div{
+    margin-left: 20px;
+}
+
+.stats h2{
+    font-weight: 700;
+    font-size: .8em;
+}
+
+.stats h1{
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.line{
+    background-color: var(--osu-pinkest);
+    height: 2px;
+    width: 100%;
+}
+
+.lineB{
+    background-color: red;
+    height: 2px;
+    width: 100%;
+}
+
+.ranks{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ranks div{
+    margin-left: 10px;
+}
+
+.ranks h2{
+    font-size: 1em;
+    text-align: center;
+}
