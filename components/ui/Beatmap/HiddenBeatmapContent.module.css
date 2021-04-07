@@ -50,6 +50,10 @@
     color: #fff;
 }
 
+.icon{
+    height: 20px;
+}
+
 .music{
     display: flex;
     justify-content: space-between;

@@ -58,3 +58,21 @@
     font-size: 1em;
     text-align: center;
 }
+
+@media (max-width: 650px){
+    .content > div{
+        flex-direction: column;
+    }
+    .stats{
+        padding: 10px 0 20px 0;
+        justify-content: center;
+    }
+
+    .ranks{
+        justify-content: center;
+    }
+
+    .ranks img{
+        width: 40px;
+    }
+}

@@ -70,3 +70,30 @@
 .green{
     color: var(--score-highlight-green);
 }
+
+@media (max-width: 920px){
+    .thumbnail{
+        display: none !important;
+        height: 0;
+        width: 0;
+        padding: 0;
+        margin: 0;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .thumbnail > img{
+        height: 0;
+        width: 0;
+        display: none;
+        overflow: hidden;
+    }
+    .player_results > div{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .player_results > div > div{
+        padding: 10px;
+        font-size: .7em;
+        flex-direction: column;
+    }
+}

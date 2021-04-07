@@ -44,3 +44,19 @@
 .btn:hover{
     color: #fff;
 }
+
+@media (max-width: 650px){
+    .header{
+        height: 100px;
+    }
+    .header > div{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .headerItem > img{
+        height: 25px;
+    }
+    .btn{
+        padding: 0px 10px;
+    }
+}

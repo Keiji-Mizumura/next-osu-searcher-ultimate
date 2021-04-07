@@ -40,7 +40,7 @@ const HiddenBeatmapContent = (props) => {
         <BeatmapCover beatmapset_id={beatmap.beatmapset_id} />
         {buttonVisible ? (
           <button className={classes.buttonLink}>
-            Download <FontAwesomeIcon icon={faDownload} />
+            Download <FontAwesomeIcon className={classes.icon} icon={faDownload} />
           </button>
         ) : (
           <></>
