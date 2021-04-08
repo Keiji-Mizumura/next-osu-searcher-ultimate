@@ -10,8 +10,11 @@
 
 .personal{
     display: flex;
-    gap: 15px;
     color: #fff;
+}
+
+.personal > div + div{
+    margin-left: 20px;
 }
 
 .personal_info{
@@ -23,7 +26,6 @@
 
 .personal_info > div{
     border-top: 2px solid var(--osu-pinkest);
-    text-align: right;
     color: var(--osu-pinkest);
     display: flex;
     justify-content: space-between;
@@ -35,13 +37,18 @@
     height: 1.3em;
 }
 
+
 .stats{
     color: #fff;
     font-size: .9em;
     display: flex;
     align-items: center;
-    gap: 50px;
 }
+
+.stats > div + div{
+    margin-left: 40px;
+}
+
 
 .values{
     text-align: right;

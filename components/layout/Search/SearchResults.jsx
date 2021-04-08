@@ -91,6 +91,8 @@ const SearchResults = (props) => {
                 count_rank_sh={playerData.count_rank_sh}
                 count_rank_a={playerData.count_rank_a}
                 total_seconds_played={playerData.total_seconds_played}
+                pp_rank={playerData.pp_rank}
+                pp_country_rank={playerData.pp_country_rank}
             />
         </>
     )

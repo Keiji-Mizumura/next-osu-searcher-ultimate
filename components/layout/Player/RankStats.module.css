@@ -1,9 +1,10 @@
-
+.content{
+    margin-top: 10px;
+}
 
 .content > div{
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 10px;
     background-color: var(--osu-not-so-light);
     color: #fff;
     display: flex;
@@ -59,6 +60,65 @@
     text-align: center;
 }
 
+.ranking{
+    display: flex;
+    justify-content: space-between;
+}
+
+.global{
+    border-top: 2px solid var(--osu-pinkest);
+}
+
+.global h2{
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.global h1{
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.local{
+    margin-top: 10px;
+    border-top: 2px solid var(--osu-pinkest);
+}
+
+.local h2{
+    font-weight: 700;
+    font-size: .8em;
+}
+
+.local h1{
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.graph{
+    height: 150px;
+    width: 100%;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.graph_line{
+    border: 0px;
+    height: 3px;
+    background-color: yellow;
+    width: 200%;
+    transform: translateY(100px) rotate(5deg);
+    position: relative;
+}
+
+.graph_line:hover::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "PRANKED!"
+}
+
 @media (max-width: 650px){
     .content > div{
         flex-direction: column;
@@ -74,5 +134,11 @@
 
     .ranks img{
         width: 40px;
+    }
+    .ranking{
+        justify-content: center;
+    }
+    .graph{
+        display: none;
     }
 }

@@ -26,7 +26,9 @@ const PlayerInformation = (props) => {
     count_rank_s,
     count_rank_sh,
     count_rank_a,
-    total_seconds_played
+    total_seconds_played,
+    pp_rank,
+    pp_country_rank
 
   } = props;
 
@@ -40,7 +42,7 @@ const PlayerInformation = (props) => {
             </div>
             <div className={classes.personal_info}>
               <h1>{playerName}</h1>
-              <div>
+              <div className={classes.country}>
                 <img
                   src={`https://osu.ppy.sh/images/flags/${country}.png`}
                   alt={country}
@@ -76,6 +78,8 @@ const PlayerInformation = (props) => {
       count_rank_sh={count_rank_sh}
       count_rank_a={count_rank_a}
       total_seconds_played={total_seconds_played}
+      pp_rank={pp_rank}
+      pp_country_rank={pp_country_rank}
         />
       <TopScores playerID={playerID} mode={mode} />
     </Fragment>

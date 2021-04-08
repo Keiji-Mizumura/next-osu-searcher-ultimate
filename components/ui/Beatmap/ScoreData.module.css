@@ -93,7 +93,13 @@
     }
     .player_results > div > div{
         padding: 10px;
-        font-size: .7em;
+        font-size: 1.5em;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 550px){
+    .player_results > div > div{
+        font-size: .8em;
     }
 }

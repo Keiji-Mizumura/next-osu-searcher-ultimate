@@ -7,7 +7,7 @@ import { secondsToDayHourMinute } from '../../../modules/Time'
 
 const RankStats = (props) => {
 
-    const { total_seconds_played, pp_raw, count_rank_ss, count_rank_ssh, count_rank_s, count_rank_sh, count_rank_a } = props
+    const { total_seconds_played, pp_raw, count_rank_ss, count_rank_ssh, count_rank_s, count_rank_sh, count_rank_a, pp_rank, pp_country_rank} = props
 
     const [days, hours, minutes] = secondsToDayHourMinute(total_seconds_played)
 
@@ -46,6 +46,23 @@ const RankStats = (props) => {
                     <div>
                         <Rank rank='A' />
                         <h2>{numberWithCommas(count_rank_a)}</h2>
+                    </div>
+                </div>
+            </Container>
+            <Container>
+                <div className={classes.ranking}>
+                    <div className={classes.graph}>
+                        <div className={classes.graph_line}></div>
+                    </div>
+                    <div className={classes.glocal}>
+                        <div className={classes.global}>
+                            <h2>Global Ranking</h2>
+                            <h1>#{numberWithCommas(pp_rank)}</h1>
+                        </div>
+                        <div className={classes.local}>
+                            <h2>Country Ranking</h2>
+                            <h1>#{numberWithCommas(pp_country_rank)}</h1>
+                        </div>
                     </div>
                 </div>
             </Container>
