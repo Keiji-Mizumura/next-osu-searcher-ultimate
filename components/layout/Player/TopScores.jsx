@@ -111,6 +111,8 @@ const TopScores = ({ playerID, mode }) => {
               </div>
             )
           )}
+          {
+            beatmaps.length > 0 ?
           <button className={classes.btn} onClick={handleClick}>
             <FontAwesomeIcon
               className={collapse ? classes.icon : classes.reversed_icon}
@@ -122,6 +124,9 @@ const TopScores = ({ playerID, mode }) => {
               icon={faChevronDown}
             />
           </button>
+          :
+          <></>
+          }
         </div>
       </Container>
     </div>

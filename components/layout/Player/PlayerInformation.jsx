@@ -71,6 +71,8 @@ const PlayerInformation = (props) => {
       </div>
 
       <RankStats 
+      mode={mode}
+      playerID={playerID}
       pp_raw={pp_raw}
       count_rank_ss={count_rank_ss}
       count_rank_ssh={count_rank_ssh}

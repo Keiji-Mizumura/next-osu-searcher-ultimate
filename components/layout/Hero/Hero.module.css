@@ -1,0 +1,19 @@
+.hero{
+    margin: 140px 0 140px 0;
+}
+
+.hero > div{
+    position: relative;
+    overflow: hidden;
+}
+
+.hero > div > img{
+    position: absolute;
+    left: 100px;
+    bottom: 5px;
+    width: 15vw;
+}
+
+.hero > div > video{
+    width: 100%;
+}

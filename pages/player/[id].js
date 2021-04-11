@@ -4,6 +4,7 @@ import SearchHeader from '../../components/layout/Search/SearchHeader'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import Footer from '../../components/layout/Footer/Footer'
 
 const PlayerPage = () => {
 
@@ -38,6 +39,7 @@ const PlayerPage = () => {
             src="https://i.pinimg.com/originals/66/30/67/6630674a19dbdcf799ef4e7f4be3dc21.png" /> */}
             <SearchHeader onChange={handleChange} value={player}/>
             <SearchResults value={player}/>
+            <Footer />
         </>
     )
 }
