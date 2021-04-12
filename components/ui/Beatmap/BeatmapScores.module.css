@@ -1,0 +1,53 @@
+.container{
+    background-color: var(--score-inner-dark);
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 20px;
+}
+
+.container > table{
+    width: 100%;
+    font-size: .8em;
+    border: 0px;
+    border-collapse: collapse;
+}
+
+.row{
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.row:hover{
+    outline: 1px solid var(--osu-pinkest);
+}
+
+.row:nth-child(odd){
+    border-radius: 10px;
+    background-color: var(--score-dark);
+}
+
+.container > table > tr > th{
+    padding: 5px;
+    text-align: left;
+    color: var(--score-text-light);
+}
+
+.container > table > tr > td{
+    padding: 5px;
+    text-align: left;
+    color: #fff;
+}
+
+.row > td > img{
+    height: 10px;
+    margin-right: 10px;
+}
+
+.mods{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mods > span > img{
+    height: 20px;
+}

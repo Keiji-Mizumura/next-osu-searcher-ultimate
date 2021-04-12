@@ -7,6 +7,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import ScoreData from "./ScoreData";
 
 import BeatmapCover from "../Images/BeatmapCover";
+import BeatmapScores from "./BeatmapScores";
 
 import { useState } from 'react';
 
@@ -25,9 +26,15 @@ const HiddenBeatmapContent = (props) => {
 
   const [buttonVisible, setButtonVisible] = useState(false);
 
+  const [scoresVisible, setScoresVisible] = useState(false);
+
   const showButton = () => {
     setButtonVisible(!buttonVisible);
   };
+
+  const makeVisible = () => {
+    setScoresVisible(!scoresVisible);
+  }
 
   return (
     <div className={classes.hidden}>
@@ -61,6 +68,13 @@ const HiddenBeatmapContent = (props) => {
         maxcombo={maxcombo}
         pp={pp}
       />
+
+      <button className={classes.rank_button} onClick={makeVisible}>{scoresVisible ? 'HIDE' : 'HIGH SCORES'}</button>
+      {
+        scoresVisible ? <BeatmapScores beatmap_id={beatmap.beatmap_id} /> : <></>
+      }
+      
+      
     </div>
   );
 };

@@ -112,7 +112,7 @@ const TopScores = ({ playerID, mode }) => {
             )
           )}
           {
-            beatmaps.length > 0 ?
+            beatmaps.length >= 5 ?
           <button className={classes.btn} onClick={handleClick}>
             <FontAwesomeIcon
               className={collapse ? classes.icon : classes.reversed_icon}

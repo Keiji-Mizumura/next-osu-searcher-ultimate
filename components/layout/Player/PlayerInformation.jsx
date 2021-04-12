@@ -8,6 +8,7 @@ import classes from "./PlayerInformation.module.css";
 
 import { Fragment } from "react";
 import RankStats from "./RankStats";
+import CountryFlag from "../../ui/Images/CountryFlag";
 
 const PlayerInformation = (props) => {
   const {
@@ -43,10 +44,7 @@ const PlayerInformation = (props) => {
             <div className={classes.personal_info}>
               <h1>{playerName}</h1>
               <div className={classes.country}>
-                <img
-                  src={`https://osu.ppy.sh/images/flags/${country}.png`}
-                  alt={country}
-                />
+                <CountryFlag country={country} />
                 <p>{getCountryName(country)}</p>
               </div>
             </div>

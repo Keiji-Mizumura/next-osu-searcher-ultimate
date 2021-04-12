@@ -59,3 +59,19 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.rank_button{
+    display: block;
+    margin: 10px auto;
+    padding: 8px 50px;
+    border: none;
+    background-color: var(--score-inner-dark);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.rank_button:hover{
+    background-color: var(--score-dark);
+}
