@@ -35,6 +35,8 @@ const Home = () => {
           <p style={{textAlign: "center"}}>Read the DOCS and learn the basics to get started.</p>
           <br/>
           <p style={{textAlign: "center"}}>THIS PAGE IS STILL TEMPORARY!</p>
+
+          <p style={{textAlign: "center"}}>TEST ADD</p>
           
         </div>
       </Container>
